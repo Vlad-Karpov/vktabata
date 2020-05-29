@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/textViewStartCaption"
+        android:layout_width="341dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickStartWork"
+        android:text="Понеслось"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepeatCaption" />
+
+    <TextView
+        android:id="@+id/textViewRepeatCaption"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Повторы"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRestCaption" />
+
+    <Button
+        android:id="@+id/buttonRepeatInfoPlus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickRepeatInfoPlus"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepeatInfo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestInfoPlus" />
+
+    <TextView
+        android:id="@+id/textViewRepeatInfo"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepeatCaption"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRestInfo" />
+
+    <Button
+        android:id="@+id/buttonRepeatInfoMinus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickRepeatInfoMinus"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/buttonRepeatInfoPlus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestInfoMinus" />
+
+    <Button
+        android:id="@+id/buttonRestInfoMinus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickRestInfoMinus"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/buttonRestInfoPlus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkInfoMinus" />
+
+    <Button
+        android:id="@+id/buttonRestInfoPlus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickRestInfoPlus"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRestInfo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkInfoPlus" />
+
+    <TextView
+        android:id="@+id/textViewRestInfo"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="10"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRestCaption"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorkInfo" />
+
+    <TextView
+        android:id="@+id/textViewRestCaption"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Отдых"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorkCaption" />
+
+    <TextView
+        android:id="@+id/textViewPrepareCaption"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Подготовка"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPrepareInfo"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="10"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrepareCaption"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPrepareInfoPlus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickPrepareInfoPlus"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrepareInfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPrepareInfoMinus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickPrepareInfoMinus"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrepareInfoPlus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWorkInfoMinus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickWorkInfoMinus"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/buttonWorkInfoPlus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPrepareInfoMinus" />
+
+    <TextView
+        android:id="@+id/textViewWorkCaption"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Работа"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrepareCaption" />
+
+    <TextView
+        android:id="@+id/textViewWorkInfo"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="10"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewWorkCaption"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrepareInfo" />
+
+    <Button
+        android:id="@+id/buttonWorkInfoPlus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClickWorkInfoPlus"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewWorkInfo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPrepareInfoPlus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
